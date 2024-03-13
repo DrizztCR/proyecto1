@@ -86,10 +86,12 @@
 
   .content h1 {
     margin-top: 1.75rem;
+    background-color: rgb(255, 0, 0);
   }
 
   .content p {
     margin-top: 1.5rem;
+    border: 2px solid blue;
   }
 
   .divider {
@@ -124,6 +126,7 @@
     line-height: 1.4rem;
     letter-spacing: -0.00875rem;
     text-decoration: none;
+    margin: 10px;
   }
 
   .pill:hover {
@@ -145,6 +148,7 @@
   .pill-group svg {
     margin-inline-start: 0.25rem;
   }
+
 
   .social-links {
     display: flex;
@@ -225,8 +229,8 @@
           <clipPath id="a"><path fill="#fff" d="M0 0h982v239H0z" /></clipPath>
         </defs>
       </svg>
-      <h1>Hello, {{ title }}</h1>
-      <p>Congratulations! Your app is running. 🎉</p>
+      <h1>{{ title }}</h1>
+      <p>{{subtitle}}</p>
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div class="right-side">
